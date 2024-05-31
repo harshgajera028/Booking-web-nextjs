@@ -95,7 +95,7 @@ function Header() {
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-200">
                                                 <item.icon
-                                                    className="h-6 w-6 text-black group-hover:text-blue-600"
+                                                    className="h-6 w-6 text-black group-hover:text-black"
                                                     aria-hidden="true"
                                                 />
                                             </div>
@@ -179,7 +179,7 @@ function Header() {
                                 <Disclosure as="div" className="-mx-3">
                                     {({ open }) => (
                                         <>
-                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-blue-800">
+                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-gray-700">
                                                 Stays
                                                 <ChevronDownIcon
                                                     className={cn(
@@ -195,7 +195,7 @@ function Header() {
                                                         key={item.name}
                                                         as="a"
                                                         href={item.href}
-                                                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-blue-800"
+                                                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-700"
                                                     >
                                                         {item.name}
                                                     </Disclosure.Button>
@@ -206,25 +206,25 @@ function Header() {
                                 </Disclosure>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-blue-800"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                 >
                                     Flights
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-blue-800"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                 >
                                     Car Rentals
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-blue-800"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                 >
                                     Attractions
                                 </a>
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-blue-800"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                 >
                                     Flight + Hotel
                                 </a>
@@ -233,7 +233,7 @@ function Header() {
                             <div className="py-6">
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-blue-800"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-700"
                                 >
                                     Log In
                                 </a>
