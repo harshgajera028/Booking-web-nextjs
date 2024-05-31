@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; 
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // Importing icons for the hamburger menu and close button
 import { useState, Fragment } from 'react';
 import { cn } from '@/lib/utils'
 import {
@@ -41,23 +41,24 @@ const products = [
 const callsToAction = [
     { name: "See Demo Booking", href: "#", icon: PlayCircleIcon },
     { name: "Contact Support", href: "#", icon: PhoneIcon },
-];
+]
 
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // State to control the mobile menu
 
     return (
-        <header className='bg-[#013894]'>
+        <header className='bg-black'>
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className='flex lg:flex-1'>
-                    <Link href="/" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Booking.com</span>
+                    <h1 className='text-white font-extrabold text-4xl'>ExploreStay</h1>
+                    {/* <Link href="/" className="-m-1.5 p-1.5">
+                        <span className="sr-only">ExploreStay</span>
                         <img
                             className="h-12 w-auto"
                             src="https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"
                             alt="Booking.com Logo"
                         />
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -94,16 +95,16 @@ function Header() {
                                         >
                                             <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-gray-200">
                                                 <item.icon
-                                                    className="h-6 w-6 text-[#013B94] group-hover:text-blue-600"
+                                                    className="h-6 w-6 text-black group-hover:text-blue-600"
                                                     aria-hidden="true"
                                                 />
                                             </div>
                                             <div className="flex-auto">
-                                                <a href={item.href} className="block font-semibold text-[#013B94]">
+                                                <a href={item.href} className="block font-semibold text-black">
                                                     {item.name}
                                                     <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-[#013B94]">
+                                                <p className="mt-1 text-black">
                                                     {item.description}
                                                 </p>
                                             </div>
@@ -115,9 +116,9 @@ function Header() {
                                         <a
                                             key={item.name}
                                             href={item.href}
-                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-[#013B94] hover:bg-gray-100"
+                                            className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-black hover:bg-gray-100"
                                         >
-                                            <item.icon className="h-5 w-5 flex-none text-[#013B94]" aria-hidden="true" />
+                                            <item.icon className="h-5 w-5 flex-none text-black" aria-hidden="true" />
                                             {item.name}
                                         </a>
                                     ))}
@@ -152,7 +153,7 @@ function Header() {
             >
                 <div className="fixed inset-0 z-10" />
 
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#013B94] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Booking.com</span>

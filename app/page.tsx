@@ -3,7 +3,7 @@ import { trending_data } from '../data/trending'
 import SearchForm from "@/components/SearchForm";
 export default function Home() {
   return (
-    <main className="bg-[#013894]">
+    <main className="bg-black">
       <section className="max-w-7xl mx-auto p-6">
         <h2 className="font-bold text-5xl text-white">Find your Next Stay</h2>
         <h3 className="text-white py-5 text-xl">
